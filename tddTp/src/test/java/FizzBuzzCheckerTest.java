@@ -9,4 +9,9 @@ public class FizzBuzzCheckerTest {
     public void oneShouldBeOne(){
         assertEquals(fizzBuzzChecker.isFizzBuzz(1), "1");
     }
+
+    @Test
+    public void twoShouldBeTwo(){
+        assertEquals(fizzBuzzChecker.isFizzBuzz(2), "2");
+    }
 }
