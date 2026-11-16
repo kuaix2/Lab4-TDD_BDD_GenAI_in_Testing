@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class PrimeCheckerTest {
     private final PrimeChecker primeChecker = new PrimeChecker();
@@ -13,5 +14,10 @@ public class PrimeCheckerTest {
     @Test
     public void test1IsNotPrime() {
         assertFalse(primeChecker.isPrime(1));
+    }
+
+    @Test
+    public void test2IsPrime() {
+        assertTrue(primeChecker.isPrime(2));
     }
 }
