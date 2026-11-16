@@ -27,5 +27,10 @@ public class FizzBuzzCheckerTest {
         assertEquals("Buzz", fizzBuzzChecker.isFizzBuzz(5));
         assertNotEquals("buzz", fizzBuzzChecker.isFizzBuzz(5));
     }
-
+    @Test
+    public void QuinzeToFizzBuzz(){
+        assertEquals( "FizzBuzz", fizzBuzzChecker.isFizzBuzz(15));
+        assertNotEquals("Buzz",fizzBuzzChecker.isFizzBuzz(15));
+        assertNotEquals("Fizzbuzz",fizzBuzzChecker.isFizzBuzz(15));
+    }
 }
