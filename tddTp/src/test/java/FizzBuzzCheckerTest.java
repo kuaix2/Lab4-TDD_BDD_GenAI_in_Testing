@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class FizzBuzzTest {
 
-    private FizzBuzzChecker fizzBuzzCheckerChecker;
+    private FizzBuzzChecker fizzBuzzChecker;
 
     @BeforeEach
     void setUp() {
