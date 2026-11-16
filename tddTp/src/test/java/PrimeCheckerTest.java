@@ -9,4 +9,9 @@ public class PrimeCheckerTest {
     public void test0IsNotPrime() {
         assertFalse(primeChecker.isPrime(0));
     }
+
+    @Test
+    public void test1IsNotPrime() {
+        assertFalse(primeChecker.isPrime(1));
+    }
 }
