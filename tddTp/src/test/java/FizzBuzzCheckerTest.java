@@ -8,29 +8,24 @@ public class FizzBuzzCheckerTest {
 
     @Test
     public void oneShouldBeOne(){
-        assertEquals(fizzBuzzChecker.isFizzBuzz(1), "1");
+        assertEquals("1", fizzBuzzChecker.isFizzBuzz(1));
     }
 
     @Test
     public void twoShouldBeTwo(){
-        assertEquals(fizzBuzzChecker.isFizzBuzz(2), "2");
+        assertEquals("2", fizzBuzzChecker.isFizzBuzz(2));
     }
 
     @Test
     public void threeToFizz(){
-        assertEquals(fizzBuzzChecker.isFizzBuzz(3), "Fizz");
-        assertNotEquals(fizzBuzzChecker.isFizzBuzz(3), "fizz");
+        assertEquals("Fizz", fizzBuzzChecker.isFizzBuzz(3));
+        assertNotEquals("fizz", fizzBuzzChecker.isFizzBuzz(3));
     }
 
     @Test
     public void FiveToBuzz(){
-        assertEquals(fizzBuzzChecker.isFizzBuzz(5), "buzz");
-        assertNotEquals(fizzBuzzChecker.isFizzBuzz(5), "Buzz");
+        assertEquals("Buzz", fizzBuzzChecker.isFizzBuzz(5));
+        assertNotEquals("buzz", fizzBuzzChecker.isFizzBuzz(5));
     }
 
-    @Test
-    public void FiveToBuzz(){
-        assertEquals(fizzBuzzChecker.isFizzBuzz(5), "buzz");
-        assertNotEquals(fizzBuzzChecker.isFizzBuzz(5), "Buzz");
-    }
 }
