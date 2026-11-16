@@ -21,4 +21,10 @@ public class FizzBuzzCheckerTest {
         assertEquals(fizzBuzzChecker.isFizzBuzz(3), "Fizz");
         assertNotEquals(fizzBuzzChecker.isFizzBuzz(3), "fizz");
     }
+
+    @Test
+    public void FiveToBuzz(){
+        assertEquals(fizzBuzzChecker.isFizzBuzz(5), "buzz");
+        assertNotEquals(fizzBuzzChecker.isFizzBuzz(5), "Buzz");
+    }
 }
