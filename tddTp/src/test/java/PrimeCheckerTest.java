@@ -20,4 +20,9 @@ public class PrimeCheckerTest {
     public void test2IsPrime() {
         assertTrue(primeChecker.isPrime(2));
     }
+
+    @Test
+    public void test3IsPrime() {
+        assertTrue(primeChecker.isPrime(3));
+    }
 }
