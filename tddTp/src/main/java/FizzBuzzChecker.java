@@ -1,16 +1,30 @@
 public class FizzBuzzChecker {
 
     public String isFizzBuzz(int number) {
-
-        if (number % 15 == 0){
+        if (isDivisibleByFifteen(number)) {
             return "FizzBuzz";
         }
-        if (number % 3 == 0){
+
+        if (isDivisibleByThree(number)) {
             return "Fizz";
         }
-        if (number % 5 == 0){
+
+        if (isDivisibleByFive(number)) {
             return "Buzz";
         }
+
         return String.valueOf(number);
+    }
+
+    private boolean isDivisibleByFifteen(int number) {
+        return number % 15 == 0;
+    }
+
+    private boolean isDivisibleByThree(int number) {
+        return number % 3 == 0;
+    }
+
+    private boolean isDivisibleByFive(int number) {
+        return number % 5 == 0;
     }
 }
