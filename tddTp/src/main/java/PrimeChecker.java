@@ -31,10 +31,14 @@ public class PrimeChecker {
 
     public boolean isPrime(int number) {
 
+        if(number == 2 || number == 3 ) {
+            return true;
+        }
+
         if (IsInferieurAUn(number) || IsPair(number) || IsDivisiblePArTrois(number) || IsDivisibleByNumber(number)) {
             return false;
         }
-
+        
         return true;
     }
 }
